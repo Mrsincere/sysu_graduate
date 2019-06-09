@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+    <html lang="zh-CN">
+
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+            <title>毕业季</title>
+
+            <!-- Bootstrap -->
+            <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Cropper -->
+            <link href="./cropper/croppe.css" rel="stylesheet">
+            <link href="./css/index.css" rel="stylesheet">
+        </head>
+
+
+    <body>
+        <div id="main" class='hidden'>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="SYSU" src="./picture/SYSU.jpg" width="25" height="25">
+                    </a>
+                    <p class="navbar-text">毕业季头像生成器</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    </br>
+                    </br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <img id="header" class="img-responsive center-block" src="./picture/header.png">
+                </div>
+            </div>
+            </br>
+
+            <div class="row" id="choose_width_height">
+                <div class="col-xs-12">
+                    <div class="tips">
+                        <h4 class="tips1">请选择图片为横屏/竖屏</h4>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                </br>
+                </div>
+                <div class="col-xs-12">
+                <button type="button" class="btn btn-primary" id="width_height_button1">横屏</button>
+                <button type="button" class="btn btn-default" id="width_height_button2">竖屏</button>
+                </div>
+            </div>
+
+
+            <div class="row hidden" id="inputimg_tip">
+                <div class="col-xs-12">
+                    <div class="tips">
+                        <h4 class="tips1">请上传你的图片</h4>
+                    </div> 
+                </div>
+                <div class="col-xs-12">
+                    <label class="btn btn-default one" for="inputImage">
+                        <input id="inputImage" type="file" name="inputImage" class="hidden button button-pill">
+                        <span>选择图片</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row" id="choose">
+                </br>
+                </br>
+                </br>
+            </div> 
+            <div class="row operate hidden">
+                <div class="col-xs-12">
+                    <div class="tips">
+                        <h4 id="tips1">请选择你想要使用的模板</h4>
+                    </div>   
+                <div class="col-xs-12">
+                    </br>
+                </div>   
+                    <button type="button" class="btn btn-tpl" id="pic1" style="background-image: url(./picture/pic1.png);"></button>
+                    <button type="button" class="btn btn-tpl" id="pic2" style="background-image: url(./picture/pic2.png);"></button>
+                    <button type="button" class="btn btn-tpl" id="pic3" style="background-image: url(./picture/pic3.png);"></button>
+                    <button type="button" class="btn btn-tpl" id="pic4" style="background-image: url(./picture/pic4.png);"></button>
+                    <button type="button" class="btn btn-tpl" id="pic5" style="background-image: url(./picture/pic1.png);"></button>
+                    <button type="button" class="btn btn-tpl" id="pic6" style="background-image: url(./picture/pic1.png);"></button>
+                </div>
+            </div>
+            <div class="row" id="operating">
+                </br>
+            </div>  
+            <div class="row operate hidden" >
+                <div class="col-xs-12">
+                    <div class="tips">
+                        <h4 id="tips1">编辑图片，生成你的专属头像</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="row operate hidden">
+                </br>
+            </div>  
+            <div class="row operate hidden">
+                <div class="col-xs-5">
+                    <label class="btn btn-default two" for="generate">
+                        <button id="generate" class="hidden button button-pill"></button> 
+                        <span>生成头像</span>
+                    </label>
+                    <label class="btn btn-default two" for="reset">
+                        <button id="reset" class="hidden button button-pill"></button>
+                        <span>重&#160&#160&#160&#160&#160&#160&#160置</span>
+                    </label>
+                </div>
+                <div class="col-xs-7">
+                    <div class="img-preview">
+                        <img src="">
+                    </div>
+                    <div class="img-preview-new hidden img-preview">
+                        <img src="">
+                    </div>
+                    <img id="avatarPreview" src="./picture/pic1.png" >
+                </div>
+            </div> 
+            <div class="row operate hidden">
+            </div> 
+
+            <div class="row operate hidden">
+                <div class="col-xs-12">
+                    <div class='panel-sysu93'>
+                        <div class="img-container">
+                            <img id="image" src="./picture/1.jpg" alt="Picture" style="max-width: 100%">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="row operate hidden">
+                </br>
+            </div>   
+            
+            <div class="row generating hidden">
+                </br>
+            </div>     
+            <div class="row generating hidden" id="generatingImg">
+                <div class="col-xs-12">
+                    <div class="tips">
+                        <h4 id="tips1">保存图片</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="row generating hidden">
+                <div>
+                    <h5 style="text-align: center;">长按图片以保存</h5>
+                </div>
+                <div class="col-xs-12">
+                    <div class="panel-body">
+                        <img id="outputImage" class="img-responsive" alt="图片生成中，请稍等">
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                </br>
+            </div>  
+            <div class="row">
+                <div class="tips">
+                    <h5 class="tips1">中大团委青年传媒中心</h5>
+                </div> 
+            </div>
+        </div>
+        <canvas id="myCanvas" style="display: none;"></canvas>
+        </div>
+
+        <div id="cartoon">  
+            <div class="year" id="year1">2</div>
+            <div class="year" id="year2">0</div>
+            <div class="year" id="year3">1</div>
+            <div class="year" id="year4">9</div>
+            <div class="sysu" id="sysu1">S</div>
+            <div class="sysu" id="sysu2">Y</div>
+            <div class="sysu" id="sysu3">S</div>
+            <div class="sysu" id="sysu4">U</div>
+            <div class="graduate hidden graduate_class1" id="graduate1">W</div>
+            <div class="graduate hidden graduate_class1" id="graduate2">e</div>
+            <div class="graduate hidden graduate_class2" id="graduate3">g</div>
+            <div class="graduate hidden graduate_class2" id="graduate4">r</div>
+            <div class="graduate hidden graduate_class2" id="graduate5">a</div>
+            <div class="graduate hidden graduate_class2" id="graduate6">d</div>
+            <div class="graduate hidden graduate_class2" id="graduate7">u</div>
+            <div class="graduate hidden graduate_class2" id="graduate8">a</div>
+            <div class="graduate hidden graduate_class2" id="graduate9">t</div>
+            <div class="graduate hidden graduate_class2" id="graduate10">e</div>
+            <div class="graduate hidden graduate_class2" id="graduate11">!</div>
+        </div>
+
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./cropper/croppe.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
+
+                

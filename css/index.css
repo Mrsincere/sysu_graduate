@@ -1,0 +1,344 @@
+body {
+    font-family: "微软雅黑", STXihei, "黑体";
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+
+.img-preview{
+	width:200px;
+	height:112.5px;
+    overflow: hidden;
+}
+
+.img-preview-new{
+    width:112.5px;
+    height:200px;
+    overflow:hidden;
+}
+
+.one {
+	background-color: #f5f5f5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    border-radius: 200px;
+}
+
+.two {
+	background-color: #f5f5f5;
+    margin-top: 25px;
+    margin-left: 40%;
+    border-radius: 200px; 
+    font-size: 15px;  
+}
+
+#header{
+	margin: 0 auto;
+}
+
+#avatarPreview{
+	width: 200px;
+    height: 112.5px;
+    position: absolute;
+    top: 0px;
+    border: 1px solid rgb(0, 86, 32)
+}
+
+.btn-tpl {
+    margin: 2px auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    min-height: 80px;
+    width: 32%; 
+    color: rgba(225, 225, 225, 0);
+    background-color: #FFF;
+    border: none;    
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: rgb(0, 86, 32)
+;  */
+    /* border-color: rgb(0, 86, 32)
+; */
+}
+
+.tips {
+    color: rgb(255, 255, 255);
+    background-color: rgba(150, 150, 149, 0.65);
+    margin-top: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 6px;
+    padding-right: 0px;
+    /*border-color: rgba(174, 10, 42,.5);*/
+}
+
+.tips1 {
+	text-align: center
+}
+
+.panel-sysu93 {
+    margin-bottom: -5px;
+    max-width: 100%;
+    margin: 25px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.year{
+    display: none;
+    position: absolute;
+}
+
+.sysu{
+    display: none;
+    position: absolute;
+}
+
+.graduate{
+    font-size: 40px;
+    position: absolute;
+    height:60px;
+    width:44px;
+}
+
+#year1{
+    top:130px;
+    left:30px;
+    /* Rotate div */
+    transform:rotate(-16deg);
+    -ms-transform:rotate(-16deg); /* Internet Explorer */
+    -moz-transform:rotate(-16deg); /* Firefox */
+    -webkit-transform:rotate(-16deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-16deg); /* Opera */
+}
+
+#year4{
+    top:130px;
+    right:30px;
+    /* Rotate div */
+    transform:rotate(16deg);
+    -ms-transform:rotate(16deg); /* Internet Explorer */
+    -moz-transform:rotate(16deg); /* Firefox */
+    -webkit-transform:rotate(16deg); /* Safari 和 Chrome */
+    -o-transform:rotate(16deg); /* Opera */
+}
+
+#year2{
+    top:50px;
+    left:100px;
+    /* Rotate div */
+    transform:rotate(-8deg);
+    -ms-transform:rotate(-8deg); /* Internet Explorer */
+    -moz-transform:rotate(-8deg); /* Firefox */
+    -webkit-transform:rotate(-8deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-8deg); /* Opera */
+}
+
+#year3{
+    top:50px;
+    right:100px;
+    /* Rotate div */
+    transform:rotate(8deg);
+    -ms-transform:rotate(8deg); /* Internet Explorer */
+    -moz-transform:rotate(8deg); /* Firefox */
+    -webkit-transform:rotate(8deg); /* Safari 和 Chrome */
+    -o-transform:rotate(8deg); /* Opera */
+}
+
+#cartoon{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:0%;
+    border: solid 1px;
+    font-size: 60px;
+}
+
+#sysu1{
+    left:-70px;
+    top:40%;
+}
+
+#sysu2{
+    left:32%;
+    top:-70px
+}
+
+#sysu3{
+    right:32%;
+    bottom:-70px;
+}
+
+#sysu4{
+    right:-70px;
+    top:40%;
+}
+
+
+.graduate1{
+    top:30%;
+    left:30%;
+    transform:rotate(-25deg);
+    -ms-transform:rotate(-25deg);
+    -moz-transform:rotate(-25deg);
+    -webkit-transform:rotate(-25deg);
+    -o-transform:rotate(-25deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+
+}
+.graduate2{
+    top:30%;
+    right:30%;
+    transform:rotate(25deg);
+    -ms-transform:rotate(25deg);
+    -moz-transform:rotate(25deg);
+    -webkit-transform:rotate(25deg);
+    -o-transform:rotate(25deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate3{
+    top:55%;
+    left:2%;
+    transform:rotate(-40deg);
+    -ms-transform:rotate(-40deg);
+    -moz-transform:rotate(-40deg);
+    -webkit-transform:rotate(-40deg);
+    -o-transform:rotate(-40deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate4{
+    top:48%;
+    left:10%;
+    transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg);
+    -moz-transform:rotate(-30deg); 
+    -webkit-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate5{
+    top:44%;
+    left:20%;
+    transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate6{
+    top:41%;
+    left:30%;
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate7{
+    top:39%;
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate8{
+    top:41%;
+    right:30%;
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate9{
+    top:44%;
+    right:20%;
+    transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate10{
+    top:48%;
+    right:10%;
+    transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.graduate11{
+    top:57%;
+    right:2%;
+    transform:rotate(40deg);
+    -ms-transform:rotate(40deg);
+    -moz-transform:rotate(40deg);
+    -webkit-transform:rotate(40deg);
+    -o-transform:rotate(40deg);
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.graduate_class1{
+    top:30%;
+    right:30%;
+}
+
+.graduate_class2{
+    top:57%;
+    right:2%;
+}
+
+
+#width_height_button1{
+    position: absolute;
+    left:25%;
+    border-radius: 10px 10px 10px 10px;
+}
+#width_height_button2{
+    position: absolute;
+    right:25%;
+    border-radius: 10px 10px 10px 10px;
+}
